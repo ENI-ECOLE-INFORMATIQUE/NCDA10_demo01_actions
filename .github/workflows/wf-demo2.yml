@@ -1,0 +1,16 @@
+name: Workflow local
+
+on: [push, workflow_dispatch]
+
+jobs:
+  buildJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simulation d'exécution de build
+        run: echo "Build en cours"
+  testJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simulation d'exécution de tests
+        run: echo "Tests en cours"
+#workflow_dispatch indique que le workflow pourra être déclencé manuellement depuis Github
